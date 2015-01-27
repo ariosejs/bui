@@ -79,8 +79,8 @@ a:hover{color:#E51900;text-decoration:none;outline:none;}
 .paginator a.disable:hover{background-color:#DBDBDB;}
 a.norepaint{color:#000;text-decoration:none;outline:none;}
 
-@font-face{font-family:'iconfont';src:url(../font/iconfont.woff) format('woff');}
-.icon2{font-family:"iconfont";display:inline-block;color:#333;font-size:16px;margin-right:5px;}
+@font-face{font-family:'iconfont';src:url(f/iconfont.woff) format('woff');}
+.Demo .icon{font-family:"iconfont";width:20px;height:20px;font-size:16px;display:inline-block;}
 .i-drop-down:before{content:"\f01fa";}
 
 .selector{width:158px;height:30px;position:relative;border-radius:5px;border:1px solid #c5c5c5;}
