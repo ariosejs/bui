@@ -6,25 +6,46 @@
 
 {% block content %}
 <div class="wrap Demo">
-
+<!-- 
 	<h1>Button</h1>
 	<h2>Button States</h2>
 	<div class="viewCode">
-		<code>
-			xx
-		</code>
-		<textarea disabled="disabled"></textarea>
+		<div class="example">
+			x
+		</div>
+		<textarea disabled="disabled">x</textarea>
 		<i class="copyBtn icon i-copy"></i>
 		<p>简介</p>
 	</div>
 
+ -->
 	<h1>Button</h1>
 	<h2>Button States</h2>
 	<div class="viewCode">
-		<code>
+		<div class="example">
+			<a href="#" class="btn">a</a> <input type="button" class="btn" value="input"> <button class="btn">button</button>
+		</div>
+		<textarea disabled="disabled">x</textarea>
+		<i class="copyBtn icon i-copy"></i>
+		<p>简介</p>
+	</div>
+	<h1>Button</h1>
+	<h2>Button States</h2>
+	<div class="viewCode">
+		<div class="example">
+			x
+		</div>
+		<textarea disabled="disabled">x</textarea>
+		<i class="copyBtn icon i-copy"></i>
+		<p>简介</p>
+	</div>
+ 	<h1>Button</h1>
+	<h2>Button States</h2>
+	<div class="viewCode">
+		<div class="example">
 			xx
-		</code>
-		<textarea disabled="disabled"></textarea>
+		</div>
+		<textarea disabled="disabled">xx</textarea>
 		<i class="copyBtn icon i-copy"></i>
 		<p>简介</p>
 	</div>

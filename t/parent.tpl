@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>{% block title %}{% endblock %}</title>
         {% block styles %}
-        <link rel="stylesheet" href="/r/{@appname@}.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/r/c/{@appname@}.css" type="text/css" media="screen" />
         {% endblock %}
         <base href="/{@appname@}/" />
     </head>

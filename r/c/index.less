@@ -23,9 +23,17 @@ nav li a:hover{color:#eaeaea;}
 .Demo .copyDone{color:#5cb85c;}
 .Demo .i-copy:after{content:"\f00c2";}
 
+// Component
+
+@green:#2BBC69;
+@green-act:#1DA758;
+@red:#E75F44;
+@red-act:#D2482C;
+
 
 /* button */
-.btn{display:inline-block;*display:inline;*zoom:1;width:180px;height:45px;line-height:45px;vertical-align:middle;text-align:center;border:none;cursor:pointer;background:#2bbc69;color:#fff;font-size:16px;border-radius:2px;}
+.btn{display:inline-block;*display:inline;*zoom:1;width:180px;height:45px;line-height:45px;vertical-align:middle;text-align:center;border:none;cursor:pointer;background:@green;color:#fff;font-size:16px;border-radius:2px;}
 .btn:hover{opacity:.8;color:#fff;}
-.btn:active{background:#1da758;}
+.btn:active{background:@green-act;opacity:1;}
+.btn:focus{outline:none;} 
 /** button states **/

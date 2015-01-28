@@ -1,11 +1,12 @@
 $(function(){
-
+	$('a').on('click',function(e){
+		e.preventDefault();
+	});
 
 });
-
-
+var code01 = '&lt;ul&gt;&lt;li&gt;1&lt;/li&gt;&lt;/ul&gt;';
+$('#code01').html(code01);
 (function(){
-	
 
 	// 多个复制
 	ZeroClipboard.config({ hoverClass: "btn-clipboard-hover" });
