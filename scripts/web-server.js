@@ -58,10 +58,10 @@ app.get( /^\/(.*?)\.html$/ , function(req,res){
 app.get( /^\/r\/j\/(\w+).js/, function(req,res,next){
     browserify(path.join(appbase, 'r','j' , req.params[0]+'.js')).call(null,req,res,next);
 });
-app.get( /(.*)\.json$/, function(req,res){
+
+app.get(/\/(\w+).json$/, function(req,res){
     fs.readFile(path.join(appbase , 'mock' , req.params[0].split('/').filter(function(item){return item.length ;}).join('.') + '.json') , function(err , data){
         if( err ){
-
             res.send(404);
         }else{
             res.set({

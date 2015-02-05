@@ -1,0 +1,14 @@
+[
+    {
+        "code": "%3Ca%20href%3D%22%23%22%20class%3D%22btn%22%3Ea%3C%2Fa%3E%20%3Cinput%20type%3D%22button%22%20class%3D%22btn%22%20value%3D%22input%22%3E%20%3Cbutton%20class%3D%22btn%22%3Ebutton%3C%2Fbutton%3E",
+        "text": "xxx"
+    },
+    {
+        "code": "%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-main%22%3Ebtn-main%3C%2Fa%3E%20%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-sub%22%3Ebtn-sub%3C%2Fa%3E%20%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-hot%22%3Ebtn-hot%3C%2Fa%3E%20%3Ca%20href%3D%22%23%22%20class%3D%22btn%22%3Ebtn%3C%2Fa%3E%20%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-disable%22%3Ebtn-disable%3C%2Fa%3E",
+        "text": "xxx"
+    },
+    {
+        "code": "%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-main%20btn-l%22%3Ebtn-l%3C%2Fa%3E%20%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-sub%20btn-l%22%3Ebtn-l%3C%2Fa%3E%3Cbr%3E%3Cbr%3E%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-main%20btn-m%22%3Ebtn-m%3C%2Fa%3E%20%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-sub%20btn-m%22%3Ebtn-m%3C%2Fa%3E%3Cbr%3E%3Cbr%3E%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-main%20btn-s%22%3Ebtn-s%3C%2Fa%3E%20%3Ca%20href%3D%22%23%22%20class%3D%22btn%20btn-sub%20btn-s%22%3Ebtn-s%3C%2Fa%3E",
+        "text": "xxx"
+    }
+]
