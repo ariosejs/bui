@@ -13,8 +13,8 @@
             <h1>BUI<small>ChunBo UI</small></h1>
             <nav>
                 <ul>
-                    <li><a href="#">Component Library</a></li>
-                    <li><a href="#">Demo</a></li>
+                    <li><a href="/index.html">Component Library</a></li>
+                    <li><a href="/demo.html">Demo</a></li>
                 </ul>
             </nav>
         </header>
