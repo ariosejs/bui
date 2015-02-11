@@ -1,28 +1,5 @@
 $(function(){
 	
-	var tips = function(){
-		var tipsItem = $('.tips');
-		var tipsTitle = tipsItem.attr('title');
-		var tipsHtml = '<p class="tipsBox">'+tipsTitle+'<i></i></p>';
-		var tipsBox;
-		tipsItem.hover(function(){
-			$(this).attr('title','');
-			if($('.tipsBox').length == 0){
-				$('body').append(tipsHtml);
-				tipsBox = $('.tipsBox');
-				tipsBox.css({top:$(this).offset().top - tipsBox.outerHeight(),left:$(this).offset().left - tipsBox.outerWidth()/2 + $(this).outerWidth()/2,'opacity':'0'});
-				tipsBox.animate({top:tipsBox.offset().top - 10,opacity:1},200);
-			}
-		},function(){
-			tipsBox.stop();
-			$(this).attr('title',tipsTitle);
-			tipsBox.animate({top:tipsBox.offset().top + 5,opacity:0},100,function(){
-				$('body').find('p.tipsBox').remove();
-			});
-			
-		})
-	}
-	tips();
 
 	function pD(){
 		$('.bui a').on('click',function(e){
@@ -46,7 +23,7 @@ $(function(){
 			});
 		});
 	};
-	pD();
+	// pD();
 	copy();
 
 

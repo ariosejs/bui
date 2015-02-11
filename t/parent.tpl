@@ -5,6 +5,7 @@
         <title>{% block title %}{% endblock %}</title>
         {% block styles %}
         <link rel="stylesheet" href="/r/c/{@appname@}.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/r/c/bui.css" type="text/css" media="screen" />
         {% endblock %}
         <base href="/{@appname@}/" />
     </head>
@@ -24,6 +25,7 @@
         <footer></footer>
     </body>
     <script type="text/javascript" src="/r/j/global.js"></script>
+    <script type="text/javascript" src="/r/j/bui.js"></script>
     {% block scripts %}
     <script type="text/javascript" src="/r/j/{@appname@}.js"></script>
     {% endblock %}    
