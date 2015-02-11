@@ -1,7 +1,6 @@
 $(function(){
 	
 	
-	
 
 	$.get('/index.json',function(data){
 		var d = $.parseJSON(data);
@@ -21,7 +20,7 @@ $(function(){
 	});
 
 	function pD(){
-		$('a').on('click',function(e){
+		$('.bui a').on('click',function(e){
 			e.preventDefault();
 		});
 	}

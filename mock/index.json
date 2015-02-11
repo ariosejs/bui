@@ -18,6 +18,10 @@
     {
         "code":"%3Chr%3E%0A%3Chr%20class%3D%22sub%22%3E",
         "text":""
+    },
+    {
+        "code":"%3Cdiv%20class%3D%22paginator%22%3E%0A%09%3Ca%20href%3D%22%23%22%20class%3D%22prev%22%3E%26laquo%3B%26nbsp%3B%E4%B8%8A%E4%B8%80%E9%A1%B5%3C%2Fa%3E%0A%09%3Ca%20href%3D%22%23%22%20class%3D%22on%22%3E1%3C%2Fa%3E%0A%09%3Ca%20href%3D%22%23%22%3E2%3C%2Fa%3E%0A%09%3Ca%20href%3D%22%23%22%3E3%3C%2Fa%3E%0A%09%3Ca%20href%3D%22%23%22%3E4%3C%2Fa%3E%0A%09%3Ca%20href%3D%22%23%22%3E5%3C%2Fa%3E%0A%09%3Ca%20href%3D%22%23%22%20class%3D%22next%22%3E%E4%B8%8B%E4%B8%80%E9%A1%B5%26nbsp%3B%26raquo%3B%3C%2Fa%3E%0A%3C%2Fdiv%3E",
+        "text":""
     }
 ]
 
