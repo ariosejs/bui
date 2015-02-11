@@ -31,18 +31,33 @@
 	}
 	// tips end
 
-	//Mask start
-
-	function mask(NO){
-		var mask = '<div class="mask"></div>';
-		if(NO && NO == true){
-			$('body').append(mask);
-		}else{
-			$('body').find('div.mask').remove();
-		}
-	}
-	mask(true);
-	//Mask end
-
+	
 
 })();
+
+//Mask start
+
+var mask = {
+	show : function(){
+		$('body').append('<div class="mask"></div>');
+		$('.mask').height($('body').height()).fadeIn();;
+	},
+	hide : function(){
+		$('body').find('div.mask').fadeOut(function(){
+			$(this).remove();
+		})
+	}
+}
+
+//Mask end
+
+//dialog
+var dialog = {
+	show:function(){
+		var d = $('.dialog');
+
+	},
+	hide:function(){
+
+	}
+}

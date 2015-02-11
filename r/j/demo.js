@@ -26,7 +26,15 @@ $(function(){
 	// pD();
 	copy();
 
-
+	$('#anxindu').on('click',function(e){
+		e.preventDefault();
+		dialog.show();
+		$('.mask').on('click',function(){
+			mask.hide();
+		})
+	});
+	
 });
+
 
 

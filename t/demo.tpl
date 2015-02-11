@@ -36,7 +36,7 @@
 					<a href="#" class="i-next"></a>
 				</div>
 			</div>
-			<a href="#" class="btn btn-main">安心度</a>
+			<a href="#" class="btn btn-main" id="anxindu">安心度</a>
 		</div>
 		<textarea disabled="disabled">
 
