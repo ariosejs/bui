@@ -23,14 +23,31 @@ $(function(){
 			});
 		});
 	};
-	// pD();
+	pD();
 	copy();
 
-	$('#anxindu').on('click',function(e){
-		e.preventDefault();
-		$('#testReport').dialog();
-	});
 	
+	$('.act-dialog').on('click',function(){
+		$.dialog({width:200,height:140,maskLayer:0.3,close:false,title:'Title',content:'ariose<br><div class="dialog-foot"></div>'});
+	});
+	$('.act-dialog-def').on('click',function(){
+		$.dialog();
+	});
+	$('.act-dialog-url').on('click',function(){
+		$.dialog({width:800,height:600,url:'http://www.chunbo.com/'});
+	});
+	$('.act-dialog-focus-1').on('click',function(){
+		var data = $(this).attr('focus-data').split(';');
+		$.dialog({width:840,height:600,top:30,focus:true,data:data,id:'dialog-focus'});
+	});
+	$('.act-dialog-focus-2').on('click',function(){
+		var data = $(this).attr('focus-data').split(';');
+		$.dialog({width:840,height:600,top:30,focus:true,data:data,id:'dialog-focus'});
+	});
+
+	
+
+
 });
 
 

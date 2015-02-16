@@ -1,48 +1,5 @@
-(function($){
-
-/* 
- * tips  
- * Copyright (c) 2015 QianCheng@chunbo http://ariose.me/ 
- * Date: 2015-02-10 
- * 遍历dom节点class包含tips且title值不为空，鼠标经过显示tips内容为title内容 
- */ 
-	var tipsElem = $('.tips');
-	var tipsBox;
-	if(tipsElem.length > 0){
-		tipsElem.each(function () {
-			var tipsThis = $(this);
-			var tipsTitle = tipsThis.attr('title');
-			var tipsHtml = '<p class="tipsBox">'+tipsTitle+'<i></i></p>';
-			if(tipsTitle){
-				tipsThis.hover(function(){
-					if($('.tipsBox').length > 0){
-						tipsBox.stop();
-						$('body').find('p.tipsBox').remove();
-					}
-					$('body').append(tipsHtml);
-					tipsThis.attr('title','');
-					tipsBox = $('.tipsBox');
-					tipsBox.css({top:tipsThis.offset().top - tipsBox.outerHeight(),left:tipsThis.offset().left - tipsBox.outerWidth()/2 + tipsThis.outerWidth()/2,'opacity':'0'});
-					tipsBox.animate({top:tipsBox.offset().top - 10,opacity:1},200);
-				},function(){
-					tipsBox.stop();
-					tipsThis.attr('title',tipsTitle);
-					tipsBox.animate({top:tipsBox.offset().top + 5,opacity:0},100,function(){
-						$('body').find('p.tipsBox').remove();
-					});
-				});
-			}
-		});		
-	}
-
-
-/* 
- * dialog  
- * Copyright (c) 2015 QianCheng@chunbo http://ariose.me/ 
- * Date: 2015-02-10 
- * jQuery 类扩展 focus相关为安心度定制
- */ 
- 	$.extend({
+;(function($){
+	$.extend({
 		dialog: function(options) {
 			var defaults = {
 				top: 50,
@@ -52,8 +9,6 @@
 				close: true,
 				title:'',
 				content:'',
-				id:'',
-				url:'',
 				focus:false,
 				data:[]
 			};
@@ -70,7 +25,7 @@
 			dialogLayer.append(dHtml);
 			dialogLayer.find('h2').text(o.title)
 			dialogLayer.find('.dialog-content').html(o.content);
-			dialogLayer.addClass(o.id);
+
 			o.close ? null : dialogLayer.find('.close').remove();
 			maskLayer.fadeTo(200, o.maskLayer);
 			maskLayer.click(function(){
@@ -80,11 +35,7 @@
 				e.preventDefault();
 				close_modal(dialogLayer);
 			});
-			if(o.url.length > 5){
-				dialogLayer.find('.dialog-content').html('<iframe frameborder="0" width="100%" height="100%" src="'+o.url+'"></iframe>');
-				$('.dialog-content iframe').css({'margin':'30px -10px 0','width':o.width,'height':o.height,'overflow':'hidden'});
-			}
-			dialogLayer.show().css({'width':o.width,'height':o.height,'margin-left':-o.width/2}).animate({top:o.top,opacity:1},300,'linear');
+			dialogLayer.show().css({'width':o.width,'height':o.height,'margin-left':-o.width/2}).animate({top:o.top,opacity:1},300);
 			if(o.focus && o.data.length >= 1){
 				$._dialogFocus(o.data);
 			}
@@ -176,13 +127,20 @@
 				$(this).find('img').css({'margin-left':-(posX*RatioX),'margin-top':-(posY*RatioY)});
 			});
 		}
-
-		// TODO iframe & position
-
-
-
-
-
 	});
+	
+	$('.act-dialog').on('click',function(){
+		$.dialog({width:200,height:140,maskLayer:0.3,close:false,title:'Title',content:'ariose<br><div class="dialog-foot"></div>'});
+	});
+	$('.act-dialog-def').on('click',function(){
+		$.dialog();
+	});
+	$('.act-dialog-focus').on('click',function(){
+		var data = $(this).attr('focus-data').split(';');
+		$.dialog({width:840,height:600,top:30,focus:true,data:data});
+	});
+
+
+
 
 })(jQuery);

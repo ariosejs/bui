@@ -26,7 +26,7 @@ function main(){
                       '{% extends "../parent.tpl" %}\n{% block styles %}\n{% parent %}\n{% endblock %}\n{% block content %}\n\n'
                       +'{% endblock %}\n{% block scripts %}\n{% parent %}\n{% endblock %}' );
     fs.writeFileSync( path.join(apppath ,'..','..','r','j', appname+'.js'),'/* @license */' );
-    fs.writeFileSync( path.join(apppath , '..','..','r' , appname+'.css') , '@import url(global.css);\n' );
+    fs.writeFileSync( path.join(apppath , '..','..','r','c' , appname+'.less') , '@import url(global.css);\n' );
 
     log.success('All done.Enjoy your app.');
 }
